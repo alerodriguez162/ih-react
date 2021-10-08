@@ -1,13 +1,10 @@
 // ./App.js
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import CRUD from "./components/CRUD";
 import FinancialApp from "./components/FinancialApp";
 import Details from "./components/FinancialApp/Details";
 import Welcome from "./components/FinancialApp/Welcome";
-import Home from "./components/Home";
 import Header from "./components/Layout/Header";
-import Main from "./components/Main";
 
 function App() {
   return (
@@ -31,9 +28,6 @@ function App() {
               );
             }}
           />
-          <Route exact path="/crud-me" component={CRUD} />
-          <Route exact path="/mike" component={Main} />
-          <Route exact path="/" component={Home} />
         </Switch>
       </Router>
     </>
